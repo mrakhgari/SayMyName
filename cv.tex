@@ -33,6 +33,13 @@
 
 
 %-------------------------------------------------------------------------------
+%	Custom \usepackage{}
+%	Add any package that you need
+%-------------------------------------------------------------------------------
+% If you want to show page number as # of ##, you need to use this package
+\usepackage{lastpage}
+
+%-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
@@ -73,4 +80,13 @@
 % Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
 \makecvheader
+
+% Print the footer with 3 arguments (<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+
+\makecvfooter 
+    {\today}
+    {Muhammadreza Akhgari Ziri - Academic CV}
+    {\thepage of \pageref{LastPage}}
 \end{document}
+
