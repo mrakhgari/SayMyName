@@ -217,6 +217,10 @@
 \newcommand*{\letternamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
 
+% For elements of languages
+\newcommand*{\languagetypestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{darktext} #1}}
+\newcommand*{\langaugesetstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{text} #1}}
+
 
 %-------------------------------------------------------------------------------
 %                Commands for personal information
@@ -724,6 +728,25 @@
   \end{itemize}
   \end{justify}
   \vspace{-4.0mm}
+}
+
+
+% Define an environment for cvlanguages
+\newenvironment{cvlanguages}{%
+  \vspace{\acvSectionContentTopSkip}
+  \vspace{-2.0mm}
+  \begin{center}
+    \setlength\tabcolsep{1ex}
+    \setlength{\extrarowheight}{0pt}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.9}}}
+}{%
+    \end{tabular*}
+  \end{center}
+}
+% Define a line of cv information(language)
+% Usage: \cvlanguage{<type>}{<languageset>}
+\newcommand*{\cvlanguage}[2]{%
+	\languagetypestyle{#1} & \langaugesetstyle{#2} \\
 }
 
 
