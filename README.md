@@ -1,9 +1,11 @@
 # SayMyName
-
+<p align="center">
 <figure align="center">
     <img src="./images/me-wlater.jpeg"/>
     <figcaption>Image Created by: <a href="https://github.com/mrakhgari/whoAreYou">WhoAreYou?</a></figcaption>
 </figure>
+</p>
+
 
 My resume and CV.
 
